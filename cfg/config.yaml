@@ -1,0 +1,6 @@
+map_topic: '/map'
+path_topic: '/path'
+max_vertices: 5000
+sample_distance: 10
+goal_bias_percentage: 10 # uses it to randomly move towards the goal
+visualization_on: true
