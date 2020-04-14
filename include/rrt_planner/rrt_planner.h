@@ -15,12 +15,15 @@
 #include <geometry_msgs/PoseStamped.h>
 
 #include <opencv2/opencv.hpp>
-#include <boost/geometry.hpp>
+
+#include <boost/geometry/geometry.hpp>
+#include <boost/geometry/geometries/point_xy.hpp>
+#include <boost/geometry/geometries/geometries.hpp>
 
 namespace rrt_planner {
 
 namespace bg = boost::geometry;
-typedef bg::model::d2::point_xy<int, bg::cs::cartesian> point_t;
+typedef bg::model::d2::point_xy<int> point_t;
 typedef bg::model::multi_point<point_t> multip_t;
 typedef std::pair<point_t, int> value;
 

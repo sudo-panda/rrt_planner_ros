@@ -226,7 +226,7 @@ void RRTPlanner::get_path() {
   do {
     int begin;
     begin = edges_.at(end);
-    plot_line(vertices_.at(end), vertices_.at(begin), cv::Scalar(69, 3, 97), 2);
+    plot_line(vertices_.at(end), vertices_.at(begin), cv::Scalar(150, 30, 200), 2);
     end = begin;
     path.poses.push_back(point_to_pose(vertices_.at(end)));
   } while (end != 0);

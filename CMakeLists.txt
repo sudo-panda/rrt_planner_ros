@@ -14,7 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
         )
 
 ## System dependencies are found with CMake's conventions
-find_package(Boost REQUIRED)
+find_package(Boost 1.65 REQUIRED)
 
 find_package(OpenCV REQUIRED)
 
